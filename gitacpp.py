@@ -5,7 +5,6 @@ os.system("git add *")
 
 #asks for input.
 commitmsg = raw_input('Enter commit message: ')
-print(commitmsg)
 
 #does commit.
 os.system("git commit -m \"" + commitmsg + "\"")
