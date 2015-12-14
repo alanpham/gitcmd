@@ -9,6 +9,8 @@ commitmsg = raw_input('Enter commit message: ')
 #does commit.
 os.system("git commit -m \"" + commitmsg + "\"")
 
+branches = raw_input('Enter current branch: ')
+
 #does pull and push.
-os.system("git pull origin master")
-os.system("git push origin master")
+os.system("git pull origin " + branches)
+os.system("git push origin " + branches)
