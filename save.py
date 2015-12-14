@@ -1,5 +1,5 @@
 import os
-addfiles = raw_input('Files to add (Put * for all):')
+addfiles = raw_input('Files to add (Put * for all): ')
 #does add command.
 os.system("git add " + addfiles)
 
@@ -9,8 +9,8 @@ commitmsg = raw_input('Enter commit message: ')
 #does commit.
 os.system("git commit -m \"" + commitmsg + "\"")
 
-branches = raw_input('Enter current branch: ')
+branch = raw_input('Enter current branch: ')
 
 #does pull and push.
-os.system("git pull origin " + branches)
-os.system("git push origin " + branches)
+os.system("git pull origin " + branch)
+os.system("git push origin " + branch)
