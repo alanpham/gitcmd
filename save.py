@@ -8,6 +8,7 @@ commitmsg = raw_input('Enter commit message: ')
 
 #does commit.
 os.system("git commit -m \"" + commitmsg + "\"")
+os.system("git branch")
 
 branch = raw_input('Enter current branch: ')
 
