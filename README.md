@@ -15,5 +15,5 @@ A collection of scripts that I wrote to make life easier.
 1. Run 'python begin.py' in command line.
 
 
-##### Notes
+## Notes
 * Begin.py - working on getting it to a standalone application using py2app
