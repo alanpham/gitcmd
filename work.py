@@ -1,5 +1,6 @@
 import os
 import subprocess
 
-os.system("cd ~/Desktop/ghrepos/koazie/")
-os.system("cd ~")
+os.system("open -a iTerm.app")
+
+os.chdir(os.path.expanduser("~/Desktop/ghrepos/"))
