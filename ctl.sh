@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$SVRPATH='~/koazieapp/koazie/'
+SVRVAR = '/koazieapp/koazie/server.js'
 
 if [ $# -eq 0 ]; then
     echo "    usage:"
@@ -27,6 +27,7 @@ case "$cmd" in
                 ;;
             server )
                 echo "starting server..."
+                sudo forever start $SVRPATH
                 ;;
         esac
         ;;
@@ -39,6 +40,7 @@ case "$cmd" in
                 ;;
             server )
                 echo "stopping server..."
+                sudo forever stop $SVRPATH
                 ;;
         esac
         ;;
@@ -51,6 +53,7 @@ case "$cmd" in
                 ;;
             server )
                 echo "restarting server..."
+                sudo forever restart $SVRPATH
                 ;;
         esac
         ;;
@@ -63,6 +66,7 @@ case "$cmd" in
                 ;;
             server )
                 echo "status of server is..."
+                sudo forever list
                 ;;
         esac
         ;;
