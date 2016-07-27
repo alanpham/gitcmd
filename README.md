@@ -24,5 +24,5 @@ A collection of scripts that I wrote to make life easier.
 
 
 ## Notes
-* begin.py is actually used through Automator fo the mac.
+* begin.py is actually used through Automator for Mac.
 * ctl.sh has a hardcoded path. It's bad practice, but since it'll just sit there on a server then there shouldn't be any issues.
