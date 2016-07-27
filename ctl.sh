@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# THIS IS HARDCODED. CHANGE THIS IS NEEDED.
 SVRVAR = '/koazieapp/koazie/server.js'
 
 if [ $# -eq 0 ]; then
