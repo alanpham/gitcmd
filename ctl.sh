@@ -5,9 +5,9 @@ SVRVAR = '/koazieapp/koazie/server.js'
 
 if [ $# -eq 0 ]; then
   echo "    usage:"
-  echo "         ./ctl.sh help"
-  echo "         ./ctl.sh (start|stop|restart|status) server"
-  echo "         ./ctl.sh (start|stop|restart|status) mongod"
+  echo "           ./ctl.sh help"
+  echo "           ./ctl.sh (start|stop|restart|status) server"
+  echo "           ./ctl.sh (start|stop|restart|status) mongod"
   echo ""
   echo "    help       - this screen."
   echo "    start      - start the service."
@@ -15,6 +15,17 @@ if [ $# -eq 0 ]; then
   echo "    restart    - restart or start the service."
   echo "    status     - show the status of the service."
   exit 1
+fi
+
+if [ $# -eq 1 ]; then
+  echo "    usage:"
+  echo "           ./ctl.sh (start|stop|restart|status) server"
+  echo "           ./ctl.sh (start|stop|restart|status) mongod"
+  echo ""
+  echo "    start      - start the service."
+  echo "    stop       - stop the service."
+  echo "    restart    - restart or start the service."
+  echo "    status     - show the status of the service."
 fi
 
 cmd=$1
