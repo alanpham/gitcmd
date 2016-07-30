@@ -81,5 +81,4 @@ else
   echo "    restart    - restart or start the service."
   echo "    status     - show the status of the service."
   exit 1
-
 fi
