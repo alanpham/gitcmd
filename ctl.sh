@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # THIS IS HARDCODED. CHANGE THIS IF NEEDED.
-SVRVAR = '/koazieapp/koazie/server.js'
+SVRPATH='/koazieapp/koazie/server.js'
 
 if [ $# -eq 2 ]; then
   cmd=$1
