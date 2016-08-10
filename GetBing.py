@@ -5,13 +5,14 @@ import os
 from os.path import expanduser
 
 def createWallpaper(path):
-  print ("Downloading Bing wallpaper to %s" %(BingSpotlightImgDir))
+  print ("Downloading Bing wallpaper to %s" %(path))
   f = open(path, 'w')
   bingpic = urllib2.urlopen(url)
   f.write(bingpic.read())
 
 def setWallpaper(path):
   os.system("osascript -e 'tell application \"Finder\" to set desktop picture to POSIX file \"" + path + "\"'")
+
 
 resolution = '1920x1080'
 BingSpotlightImgDir = expanduser("~") + '/Pictures/BingSpotlight/'
@@ -29,3 +30,4 @@ path = BingSpotlightImgDir + nameWallpaper
 
 createWallpaper(path)
 setWallpaper(path)
+os.system("killall Dock")
