@@ -31,6 +31,7 @@ A collection of scripts that I wrote to make life easier.
 
 #### To use once 
 * Type `python GetBing.py` in the Terminal
+
 #### To set on repeat
 1. Create an app using Automator with the action `Run Shell Script`
 2. Copy and Paste the script into the section provided
